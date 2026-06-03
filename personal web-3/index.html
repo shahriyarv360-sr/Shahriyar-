@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shahriyar Rahman | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursorDot"></div>
+
+  <!-- Animated BG -->
+  <div class="bg-animation">
+    <div class="bg-orb orb1"></div>
+    <div class="bg-orb orb2"></div>
+    <div class="bg-orb orb3"></div>
+  </div>
+  <canvas id="stars"></canvas>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="logo">SR<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nl active">Home</a></li>
+      <li><a href="#about" class="nl">About</a></li>
+      <li><a href="#skills" class="nl">Skills</a></li>
+      <li><a href="#projects" class="nl">Projects</a></li>
+      <li><a href="#contact" class="nl">Contact</a></li>
+    </ul>
+    <button class="ham" id="ham" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer" id="drawer">
+    <button class="drawer-close" id="drawerClose"><i class="fas fa-times"></i></button>
+    <ul>
+      <li><a href="#home" class="dl">Home</a></li>
+      <li><a href="#about" class="dl">About</a></li>
+      <li><a href="#skills" class="dl">Skills</a></li>
+      <li><a href="#projects" class="dl">Projects</a></li>
+      <li><a href="#contact" class="dl">Contact</a></li>
+    </ul>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+
+      <!-- LEFT TEXT -->
+      <div class="hero-text">
+        <p class="badge reveal">👋 Welcome to my Portfolio</p>
+        <h1 class="reveal d1">SHAHRIYAR<br/><span class="grad-text">RAHMAN</span></h1>
+        <div class="typed-wrap reveal d2">
+          <span id="typed"></span><span class="blink">_</span>
+        </div>
+        <p class="hero-bio reveal d3">
+          I am a passionate <strong>Computer Science & Technology</strong> student at 
+          <strong>Rajshahi Polytechnic Institute</strong>, driven by a love for 
+          coding, web development, and creative technology.
+        </p>
+        <div class="hero-actions reveal d4">
+          <a href="#contact" class="btn-glow">Hire Me</a>
+          <a href="#about" class="btn-ghost">About Me</a>
+        </div>
+        <!-- SOCIAL ICONS — round -->
+        <div class="socials reveal d5">
+          <a href="https://www.facebook.com/share/1B9egGp2QW/" target="_blank" class="soc-btn" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://wa.me/8801879307815" target="_blank" class="soc-btn" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/shahriyarrahman167?igsh=eDlpbjh0eGE5MGhk&utm_source=ig_contact_invite" target="_blank" class="soc-btn" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="mailto:shahriyarrahman167@gmail.com" class="soc-btn" title="Gmail">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT — ROUND PHOTO -->
+      <div class="hero-photo reveal d2">
+        <div class="photo-ring ring3"></div>
+        <div class="photo-ring ring2"></div>
+        <div class="photo-ring ring1"></div>
+        <div class="photo-circle">
+          <img src="fs.jpg" alt="Shahriyar Rahman"/>
+        </div>
+        <div class="photo-dot dot-a"></div>
+        <div class="photo-dot dot-b"></div>
+        <div class="photo-dot dot-c"></div>
+      </div>
+
+    </div>
+
+    <div class="scroll-down">
+      <div class="mouse"><div class="wheel"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about-sec">
+    <div class="sec-tag">About Me</div>
+    <h2 class="sec-title reveal">Who <span class="grad-text">I Am</span></h2>
+    <div class="about-grid">
+      <div class="about-photo-wrap reveal">
+        <div class="about-photo-ring"></div>
+        <div class="about-photo-circle">
+          <img src="clg.jpg" alt="Shahriyar Rahman"/>
+        </div>
+      </div>
+      <div class="about-content reveal d1">
+        <p class="about-bio">
+          Hi, I'm <span class="grad-text fw700">Shahriyar Rahman</span> — a motivated 
+          Computer Science & Technology (CST) student at Rajshahi Polytechnic Institute, Bangladesh. 
+          I enjoy building things for the web and solving problems through technology. 
+          My goal is to become a professional full-stack developer and contribute 
+          to meaningful projects that make a difference.
+        </p>
+        <div class="info-cards">
+          <div class="info-card">
+            <i class="fas fa-user"></i>
+            <div>
+              <span class="ic-label">Full Name</span>
+              <span class="ic-val">Shahriyar Rahman</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-graduation-cap"></i>
+            <div>
+              <span class="ic-label">Department</span>
+              <span class="ic-val">Computer Science & Technology (CST)</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-university"></i>
+            <div>
+              <span class="ic-label">Institute</span>
+              <span class="ic-val">Rajshahi Polytechnic Institute</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <span class="ic-label">Email</span>
+              <span class="ic-val">shahriyarrahman167@gmail.com</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-phone"></i>
+            <div>
+              <span class="ic-label">Phone</span>
+              <span class="ic-val">+880 1879307815</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <span class="ic-label">Location</span>
+              <span class="ic-val">Rajshahi, Bangladesh</span>
+            </div>
+          </div>
+        </div>
+        <a href="mailto:shahriyarrahman167@gmail.com" class="btn-glow">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section skills-sec">
+    <div class="sec-tag">My Skills</div>
+    <h2 class="sec-title reveal center">What I <span class="grad-text">Know</span></h2>
+    <div class="skills-grid">
+      <div class="skill-box reveal" style="--dd:0.05s">
+        <div class="sk-icon html"><i class="fab fa-html5"></i></div>
+        <h3>HTML5</h3>
+        <div class="sk-track"><div class="sk-bar" data-w="92"></div></div>
+        <span class="sk-num">92%</span>
+      </div>
+      <div class="skill-box reveal" style="--dd:0.15s">
+        <div class="sk-icon css"><i class="fab fa-css3-alt"></i></div>
+        <h3>CSS3</h3>
+        <div class="sk-track"><div class="sk-bar" data-w="85"></div></div>
+        <span class="sk-num">85%</span>
+      </div>
+      <div class="skill-box reveal" style="--dd:0.25s">
+        <div class="sk-icon js"><i class="fab fa-js-square"></i></div>
+        <h3>JavaScript</h3>
+        <div class="sk-track"><div class="sk-bar" data-w="75"></div></div>
+        <span class="sk-num">75%</span>
+      </div>
+      <div class="skill-box reveal" style="--dd:0.35s">
+        <div class="sk-icon py"><i class="fab fa-python"></i></div>
+        <h3>Python</h3>
+        <div class="sk-track"><div class="sk-bar" data-w="68"></div></div>
+        <span class="sk-num">68%</span>
+      </div>
+      <div class="skill-box reveal" style="--dd:0.45s">
+        <div class="sk-icon db"><i class="fas fa-database"></i></div>
+        <h3>SQL / Database</h3>
+        <div class="sk-track"><div class="sk-bar" data-w="65"></div></div>
+        <span class="sk-num">65%</span>
+      </div>
+      <div class="skill-box reveal" style="--dd:0.55s">
+        <div class="sk-icon git"><i class="fab fa-git-alt"></i></div>
+        <h3>Git & GitHub</h3>
+        <div class="sk-track"><div class="sk-bar" data-w="70"></div></div>
+        <span class="sk-num">70%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects-sec">
+    <div class="sec-tag">My Work</div>
+    <h2 class="sec-title reveal center">Featured <span class="grad-text">Projects</span></h2>
+
+    <!-- Filter Buttons -->
+    <div class="proj-filters reveal">
+      <button class="pf-btn active" data-filter="all">All</button>
+      <button class="pf-btn" data-filter="html">HTML/CSS</button>
+      <button class="pf-btn" data-filter="js">JavaScript</button>
+      <button class="pf-btn" data-filter="fullstack">Full Stack</button>
+    </div>
+
+    <div class="proj-grid">
+
+      <!-- Project 1 -->
+      <div class="proj-card reveal" style="--dd:0.05s" data-cat="html">
+        <div class="proj-top">
+          <div class="proj-icon"><i class="fas fa-store"></i></div>
+          <div class="proj-links">
+            <a href="#" title="Live Demo" class="proj-link"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" title="Source Code" class="proj-link"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="proj-img-wrap">
+          <div class="proj-mock mock-shop">
+            <div class="mock-bar"><span></span><span></span><span></span></div>
+            <div class="mock-body">
+              <div class="mock-nav"></div>
+              <div class="mock-cards">
+                <div class="mc"></div><div class="mc"></div><div class="mc"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-tags">
+            <span class="ptag">HTML5</span><span class="ptag">CSS3</span><span class="ptag">Responsive</span>
+          </div>
+          <h3>E-Commerce Landing Page</h3>
+          <p>A fully responsive online shop landing page with product cards, hero banner, navigation, and modern UI design built with pure HTML & CSS.</p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="proj-card reveal" style="--dd:0.15s" data-cat="js">
+        <div class="proj-top">
+          <div class="proj-icon"><i class="fas fa-cloud-sun"></i></div>
+          <div class="proj-links">
+            <a href="#" title="Live Demo" class="proj-link"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" title="Source Code" class="proj-link"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="proj-img-wrap">
+          <div class="proj-mock mock-weather">
+            <div class="mock-bar"><span></span><span></span><span></span></div>
+            <div class="mock-body">
+              <div class="mock-weather-top">
+                <div class="mw-icon">☀️</div>
+                <div class="mw-temp">28°C</div>
+              </div>
+              <div class="mock-weather-info">
+                <div class="mwi"></div><div class="mwi short"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-tags">
+            <span class="ptag">JavaScript</span><span class="ptag">API</span><span class="ptag">CSS3</span>
+          </div>
+          <h3>Weather App</h3>
+          <p>A real-time weather application that fetches live data using OpenWeatherMap API. Shows temperature, humidity, wind speed with dynamic icons.</p>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="proj-card reveal" style="--dd:0.25s" data-cat="js">
+        <div class="proj-top">
+          <div class="proj-icon"><i class="fas fa-tasks"></i></div>
+          <div class="proj-links">
+            <a href="#" title="Live Demo" class="proj-link"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" title="Source Code" class="proj-link"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="proj-img-wrap">
+          <div class="proj-mock mock-todo">
+            <div class="mock-bar"><span></span><span></span><span></span></div>
+            <div class="mock-body">
+              <div class="mock-todo-input"></div>
+              <div class="mock-todo-items">
+                <div class="mti done"><span class="mti-dot"></span><div></div></div>
+                <div class="mti"><span class="mti-dot"></span><div></div></div>
+                <div class="mti"><span class="mti-dot"></span><div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-tags">
+            <span class="ptag">JavaScript</span><span class="ptag">LocalStorage</span>
+          </div>
+          <h3>Task Manager App</h3>
+          <p>A feature-rich to-do list app with add, delete, complete, and filter tasks. Data persists using localStorage so tasks are saved after refresh.</p>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="proj-card reveal" style="--dd:0.35s" data-cat="html">
+        <div class="proj-top">
+          <div class="proj-icon"><i class="fas fa-user-tie"></i></div>
+          <div class="proj-links">
+            <a href="#" title="Live Demo" class="proj-link"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" title="Source Code" class="proj-link"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="proj-img-wrap">
+          <div class="proj-mock mock-portfolio">
+            <div class="mock-bar"><span></span><span></span><span></span></div>
+            <div class="mock-body">
+              <div class="mock-hero-row">
+                <div class="mhr-text">
+                  <div class="mhr-line"></div>
+                  <div class="mhr-line short"></div>
+                </div>
+                <div class="mhr-circle"></div>
+              </div>
+              <div class="mock-cards-row">
+                <div class="mcr"></div><div class="mcr"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-tags">
+            <span class="ptag">HTML5</span><span class="ptag">CSS3</span><span class="ptag">Animations</span>
+          </div>
+          <h3>Personal Portfolio Website</h3>
+          <p>A modern animated personal portfolio with dark theme, glassmorphism cards, CSS animations, scroll effects, and responsive layout.</p>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="proj-card reveal" style="--dd:0.45s" data-cat="js">
+        <div class="proj-top">
+          <div class="proj-icon"><i class="fas fa-calculator"></i></div>
+          <div class="proj-links">
+            <a href="#" title="Live Demo" class="proj-link"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" title="Source Code" class="proj-link"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="proj-img-wrap">
+          <div class="proj-mock mock-calc">
+            <div class="mock-bar"><span></span><span></span><span></span></div>
+            <div class="mock-body">
+              <div class="calc-screen">5 + 3 = 8</div>
+              <div class="calc-btns">
+                <div class="cb"></div><div class="cb"></div><div class="cb"></div><div class="cb orange"></div>
+                <div class="cb"></div><div class="cb"></div><div class="cb"></div><div class="cb orange"></div>
+                <div class="cb wide"></div><div class="cb orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-tags">
+            <span class="ptag">JavaScript</span><span class="ptag">CSS Grid</span>
+          </div>
+          <h3>Scientific Calculator</h3>
+          <p>A fully functional calculator with basic and scientific operations, keyboard support, history log, and smooth button animations.</p>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="proj-card reveal" style="--dd:0.55s" data-cat="fullstack">
+        <div class="proj-top">
+          <div class="proj-icon"><i class="fas fa-blog"></i></div>
+          <div class="proj-links">
+            <a href="#" title="Live Demo" class="proj-link"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" title="Source Code" class="proj-link"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="proj-img-wrap">
+          <div class="proj-mock mock-blog">
+            <div class="mock-bar"><span></span><span></span><span></span></div>
+            <div class="mock-body">
+              <div class="blog-hero"></div>
+              <div class="blog-posts">
+                <div class="bp"><div class="bp-img"></div><div class="bp-text"><div></div><div class="short"></div></div></div>
+                <div class="bp"><div class="bp-img"></div><div class="bp-text"><div></div><div class="short"></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-tags">
+            <span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JS</span><span class="ptag">PHP</span>
+          </div>
+          <h3>Blog Platform</h3>
+          <p>A dynamic blog website with user login, post creation, comment system, and admin dashboard. Built with HTML, CSS, JavaScript and PHP backend.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact-sec">
+    <div class="sec-tag">Contact</div>
+    <h2 class="sec-title reveal center">Get In <span class="grad-text">Touch</span></h2>
+    <div class="contact-grid">
+      <div class="contact-left reveal">
+        <h3>Let's <span class="grad-text">Connect</span></h3>
+        <p>Feel free to reach out for collaborations, projects, or just a friendly chat about technology!</p>
+        <div class="c-links">
+          <a href="mailto:shahriyarrahman167@gmail.com" class="c-link">
+            <div class="c-icon-wrap"><i class="fas fa-envelope"></i></div>
+            <div><span class="c-lbl">Email</span><span class="c-val">shahriyarrahman167@gmail.com</span></div>
+          </a>
+          <a href="https://wa.me/8801879307815" target="_blank" class="c-link">
+            <div class="c-icon-wrap green"><i class="fab fa-whatsapp"></i></div>
+            <div><span class="c-lbl">WhatsApp</span><span class="c-val">+880 1879307815</span></div>
+          </a>
+          <a href="https://www.facebook.com/share/1B9egGp2QW/" target="_blank" class="c-link">
+            <div class="c-icon-wrap blue"><i class="fab fa-facebook-f"></i></div>
+            <div><span class="c-lbl">Facebook</span><span class="c-val">Shahriyar Rahman</span></div>
+          </a>
+          <a href="https://www.instagram.com/shahriyarrahman167?igsh=eDlpbjh0eGE5MGhk&utm_source=ig_contact_invite" target="_blank" class="c-link">
+            <div class="c-icon-wrap pink"><i class="fab fa-instagram"></i></div>
+            <div><span class="c-lbl">Instagram</span><span class="c-val">@shahriyarrahman167</span></div>
+          </a>
+        </div>
+      </div>
+      <form class="contact-form reveal d1" id="cForm">
+        <div class="f-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Enter your name" required/>
+        </div>
+        <div class="f-group">
+          <label>Your Email</label>
+          <input type="email" placeholder="Enter your email" required/>
+        </div>
+        <div class="f-group">
+          <label>Message</label>
+          <textarea rows="5" placeholder="Write your message..." required></textarea>
+        </div>
+        <button type="submit" class="btn-glow w100">
+          Send Message &nbsp;<i class="fas fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-photo">
+      <img src="xx.jpg" alt="SR"/>
+    </div>
+    <h3 class="footer-name grad-text">Shahriyar Rahman</h3>
+    <p class="footer-dept">CST Student · Rajshahi Polytechnic Institute</p>
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/share/1B9egGp2QW/" target="_blank" class="soc-btn"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://wa.me/8801879307815" target="_blank" class="soc-btn"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/shahriyarrahman167?igsh=eDlpbjh0eGE5MGhk&utm_source=ig_contact_invite" target="_blank" class="soc-btn"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:shahriyarrahman167@gmail.com" class="soc-btn"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p class="footer-copy">© 2026 Shahriyar Rahman · All rights reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
